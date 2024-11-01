@@ -1,0 +1,489 @@
+body{
+    background-color: #292829;
+    font-family: 'Times New Roman', Times, serif;
+}
+#logo{
+    border-radius: 20px;
+}
+h1{
+    color: #FF5722;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.workout{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.flex-container{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+h2{
+    font-size: 10em;
+    color: #FF5722;
+    text-align: center;
+}
+p{
+    font-size: 1.3em;
+    color:#fff;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+.quote{
+    font-size: 1.5em;
+    color: #FF5722;
+    text-align: center;
+}
+.about-quote{
+    font-size: 1.3em;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+#pic{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+h3{
+    font-size: 2em;
+    color: #FF5722;
+}
+.workout img{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    transition: tarnsform 0.3s ease;
+}
+.workout:hover img{
+    transform: scale(1.1);
+}
+.nutrition img{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    transition: tarnsform 0.3s ease;
+}
+.nutrition:hover img{
+    transform: scale(1.1);
+}
+#workout-pic{
+    display: flex;
+    justify-content: center;
+}
+#nutrition-pic{
+    display: flex;
+    justify-content: center;
+}
+.title-workout{
+    font-size: xx-large;
+    text-align:center;
+}
+.title-nutrition{
+    font-size: xx-large;
+    text-align:center;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color:black;
+    padding: 20px;
+}
+.footer-title{
+    display: flex;
+    font-size: 2em;
+}
+.links{
+    color: #FF5722;
+}
+.links ul{
+    padding: 0;
+    font-size: 1.3em;
+    list-style: none;
+    color: #fff;
+}
+.links ul a{
+
+    text-decoration: none;
+    color: #fff;
+}
+.copyright{
+    color: #fff;
+    display: flex;
+    font-size: 1.3em;
+    margin-top: 15px;
+}
+.social-media-links p{
+    display: flex;
+    font-size: 1.5em;
+    color: #FF5722;
+}
+.social-media-links ul a{
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #fff;
+}
+.social-media-links ul{
+    list-style: none;
+}
+@media (max-width: 992px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    h2 {
+        font-size: 5em;
+    }
+    p, .quote, .about-quote, .title-workout, .title-nutrition, .links ul, .social-media-links ul a {
+        font-size: 1.1em;
+    }
+    .workout img, .nutrition img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .flex-container {
+        grid-column: 1;
+    }
+    h2 {
+        font-size: 3em;
+    }
+    p, .quote, .about-quote, .title-workout, .title-nutrition, .links ul, .social-media-links ul a {
+        font-size: 1em;
+        text-align: center;
+    }
+    .workout img, .nutrition img {
+        width: 250px;
+        height: 250px;
+    }
+    .footer {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+    .footer-title, .copyright {
+        font-size: 1.2em;
+        text-align: center;
+    }
+}
+
+/************************** Workout ******************************/
+.info p{
+    text-align: start;
+}
+#workout{
+    text-align: center;
+}
+.grid-container{
+    margin-top: 30px;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.grid-container video{
+    display: flex;
+    width: 800px;;
+}
+.instruction-1{
+    margin-bottom: 30px;
+}
+.mountain-climber{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.instruction-2{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.topic{
+    font-size: larger;
+    color: #e66b39;
+}
+ul li{
+    color: #fff;
+    list-style: none;
+    font-size: 1.3em;
+}
+ol li{
+    list-style: none;
+    font-size: 1.3em;
+    color: #fff;
+}
+/************************* Gallery**************************/
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 50px;
+}
+.gallery img{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    
+}
+.photo1 img{
+    transition: transform 0.3s ease-in-out;
+}
+.photo1:hover img{
+    transform: scale(1.1);
+}
+.photo2 img{
+    transition: transform 0.3s ease-in-out;
+}
+.photo2:hover img{
+    transform: scale(1.1);
+}
+.photo3 img{
+    transition: transform 0.3s ease-in-out;
+}
+.photo3:hover img{
+    transform: scale(1.1);
+}
+.photo4 img{
+    transition: transform 0.3s ease-in-out;
+}
+.photo4:hover img{
+    transform: scale(1.1);
+}
+.photo5 img{
+    transition: transform 0.3s ease-in-out;
+}
+.photo5:hover img{
+    transform: scale(1.1);
+}
+.photo6 img{
+    transition: transform 0.3s ease-in-out;
+}
+.photo6:hover img{
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .info,p {
+        text-align: center;
+        font-size: 0.7em;
+    }
+    #workout {
+        text-align: center;
+    }
+    .grid-container {
+        margin: 10px;
+        gap: 10px;
+    }
+    .grid-container video {
+        width: 100%; /* Full-width on smaller screens */
+    }
+    .gallery {
+        gap: 20px;
+        justify-content: center;
+    }
+    .gallery img {
+        width: 250px;
+        height: 250px;
+    }
+    .topic {
+        font-size: 0.6em;
+        text-align: center;
+    }
+    ul li, ol li {
+        font-size: 0.5em;
+        text-align: center;
+    }
+}
+
+/************************ Contact *****************************/
+.contact-form{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+.styled-form{
+    background-color: #fff;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+.styled-form h3{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+label{
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+label[for ="message"]{
+    margin-left: 1em;
+}
+input{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form input, form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+button{
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #5cb85c;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover{
+    background-color: #4cae4c;
+}
+
+@media (max-width: 992px) {
+    .contact-form {
+        padding: 10px;
+        height: auto;
+    }
+    .styled-form {
+        padding: 15px 30px;
+        max-width: 400px;
+    }
+    .styled-form h3 {
+        font-size: 20px;
+    }
+    label, input, form textarea {
+        font-size: 13px;
+    }
+    button {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 5px;
+    }
+    .styled-form {
+        padding: 10px 20px;
+        max-width: 100%;
+        box-shadow: none;
+    }
+    .styled-form h3 {
+        font-size: 18px;
+    }
+    label, input, form textarea {
+        font-size: 12px;
+    }
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/**************************** Nutrition ****************************/
+#Nutrition{
+    color: #e66b39;
+    text-align: center;
+}
+.food{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.about-nutrition{
+    text-align: center;
+    color: #fadae7;
+}
+#quote{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fadae7;
+    text-align: center;
+}
+
+@media (max-width: 992px) {
+    .gallery img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .footer-title h1, .links h3, .copyright p {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .links ul li, .social-media-links ul a {
+        font-size: 1em;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .gallery img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .footer-title h1 {
+        font-size: 1.5em;
+    }
+
+    .links ul li, .social-media-links ul li {
+        font-size: 0.9em;
+    }
+
+    .about-nutrition, #quote, #Nutrition {
+        font-size: 1em;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .food {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
